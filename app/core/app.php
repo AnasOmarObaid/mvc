@@ -10,6 +10,7 @@ class App
     private $controller = "HomeController";
     private $method = "index";
     private $params = [];
+    private $namespace = "mvc\controllers\\";
 
     public function __construct()
     {
@@ -26,6 +27,11 @@ class App
             $quey_string = $_SERVER['QUERY_STRING'];
             $urls =  explode('/', $quey_string);
 
+            if($urls[0] == "dashboard"){
+                $this->namespace = "mvc\controllers\dashboard\\";
+                unset($urls[0]);
+                $urls = array_values($urls);
+            }
             // formate controller
             $this->controller = !empty($urls[0]) ? ucfirst($urls[0]) . "Controller" : "HomeController";
 
@@ -44,7 +50,7 @@ class App
     {
 
         // check for controller and method
-        $controller = "mvc\controllers\\" . $this->controller;
+        $controller = $this->namespace . $this->controller;
 
         if (class_exists($controller) && method_exists($controller, $this->method)) {
             

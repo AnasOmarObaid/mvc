@@ -22,7 +22,8 @@
         "rakit/validation": "^1.4",
         "php": ">=7.4",
         "another-vendor/package": "1.*",
-        "abhino/mvc":"dev-master@dev"
+        "abhino/mvc":"dev-master@dev",
+        "vendor/packageb": "dev-master"
     },
     "repositories": [
         {

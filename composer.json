@@ -1,6 +1,17 @@
 {
     "name": "mvc/mvc",
+    "type": "framework",
+    "homepage": "https://github.com/AnasOmarObaid/mvc",
     "description": "mvc to create php project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anas Omar",
+            "email": "ansmr002@gmail.com",
+            "homepage": "https://github.com/AnasOmarObaid/mvc",
+            "role": "Developer"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "mvc\\": "app/"

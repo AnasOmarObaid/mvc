@@ -3,7 +3,7 @@
     "type": "framework",
     "homepage": "https://github.com/AnasOmarObaid/mvc",
     "description": "mvc to create php project",
-    "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Anas Omar",

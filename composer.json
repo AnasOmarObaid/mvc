@@ -21,6 +21,13 @@
         "dcblogdev/pdo-wrapper": "^2.0",
         "rakit/validation": "^1.4",
         "php": ">=7.4",
-        "another-vendor/package": "1.*"
-    }
+        "another-vendor/package": "1.*",
+        "abhino/mvc":"dev-master@dev"
+    },
+    "repositories": [
+        {
+           "type": "vcs",
+           "url": "https://github.com/AnasOmarObaid/mvc" 
+        }
+      ]
 }
